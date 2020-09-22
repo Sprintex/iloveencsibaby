@@ -16,6 +16,7 @@ body {
 .fixnavi {
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .navigacioul {
@@ -62,6 +63,7 @@ body {
 .banner {
   position: relative;
   text-align: center;
+  z-index: 1;
 }
 
 .bannerlogo {
@@ -93,7 +95,7 @@ body {
 }
 
 .bannerudv {
-  color: white;
+  color: #F9F0FF;
   font-size: 4vw;
   letter-spacing: 5px;
   position: absolute;
@@ -103,7 +105,7 @@ body {
 }
 
 .bannerszoveg {
-  color: white;
+  color: #F9F0FF;
   font-size: 2vw;
   letter-spacing: 5px;
   position: absolute;
@@ -117,4 +119,15 @@ body {
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.lablec {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #362B2E;
+  color: #F9F0FF;
+  letter-spacing: 2px;
+  text-align: center;
 }
