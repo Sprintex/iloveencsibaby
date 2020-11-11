@@ -1,11 +1,19 @@
 body {
   margin: 0;
   background-color: #F9F0FF;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
+/* navigációs menü és fejléc fix helyen */
+.fixnavi {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+/* fejléc */
 .fejlecul {
   margin: 0;
   padding: 4px;
@@ -15,12 +23,7 @@ body {
   background-color: #362B2E;
 }
 
-.fixnavi {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
+/* navigációs menü */
 .navigacioul {
   margin: 0;
   padding: 0;
@@ -30,10 +33,12 @@ body {
   background-color: #F9F0FF;
 }
 
+/* navigációs menü gomb elrendezés típus */
 .navigacioli {
   display: inline-block;
 }
 
+/* navigációs menü gombok */
 .navigaciolia {
   color: #F37B83;
   font-weight: bolder;
@@ -45,6 +50,7 @@ body {
   padding: 15px;
 }
 
+/* navigációs menü aktív gomb */
 .navigaciolia_aktiv {
   color: #F9F0FF;
   font-weight: bolder;
@@ -57,46 +63,53 @@ body {
   padding: 15px;
 }
 
+/* navigációs menü egérrel a gomb felett */
 .navigaciolia:hover {
   background-color: #362B2E;
   color: #F9F0FF;
 }
 
+/* banner dobozának létrehozása, réteg beállítása, hogy a nav menü alá bukjon */
 .banner {
   position: relative;
   text-align: center;
   z-index: 1;
 }
 
-.bannerlogo {
+/* tartalmak elhelyezése a banneren belül */
+#bannerlogo {
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:7%;
 }
 
-.fb {
+#fb {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 40%;
   transform: translate(-50%, -50%);
+  width:3%;
 }
 
-.twitter {
+#twitter {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:3%;
 }
 
-.ig {
+#ig {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 60%;
   transform: translate(-50%, -50%);
+  width:3%;
 }
 
-.bannerudv {
+#bannerudv {
   color: #F9F0FF;
   font-size: 4vw;
   letter-spacing: 5px;
@@ -106,7 +119,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.bannerszoveg {
+#bannerszoveg {
   color: #F9F0FF;
   font-size: 2vw;
   letter-spacing: 5px;
@@ -116,13 +129,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.vonal {
+#vonal {
   position: absolute;
-  top: 78%;
+  top: 77%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width:24%
 }
 
+/* oldal tartalmának aljára fixált lábléc */
 .lablec {
   position: absolute;
   right: 0;
@@ -139,4 +154,13 @@ h1 {
   color:#362B2F;
   margin: 0px;
   letter-spacing: 1px;
+}
+
+.kozep {
+  text-align:center;
+}
+
+.kepekszoveg {
+  text-align: center;
+  color: #594046
 }
